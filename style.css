@@ -1,0 +1,271 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+nav a.active, nav a:hover {
+    border-bottom: 2px solid #1a3322;
+    padding-bottom: 5px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* BANNER HERO */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Gemini_Generated_Image_h572voh572voh572.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    color: #ddd;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ebd3b4;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: #dfc29d;
+}
+
+/* PRODUTOS */
+.produtos-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.produtos-section h2 {
+    color: #1a3322;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.produto-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.produto-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.produto-card h3 {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.produto-card .material {
+    color: #777;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.produto-card .preco {
+    font-weight: bold;
+    color: #111;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+.btn-detalhes {
+    display: block;
+    text-align: center;
+    background-color: #1a3322;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-detalhes:hover {
+    background-color: #254a31;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #1a3322;
+    color: #fff;
+    padding: 40px 8% 20px 8%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 30px;
+}
+
+.footer-col h4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #ebd3b4;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ebd3b4;
+}
+
+.sub-text {
+    font-size: 0.8rem !important;
+    color: #999 !important;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.75rem;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+/* BOTÃO FLUTUANTE WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.whatsapp-float i {
+    font-size: 1.3rem;
+}
+
+/* RESPONSIVIDADE (TELEMÓVEL) */
+@media (max-width: 768px) {
+    nav {
+        display: none; /* No telemóvel real, usaria um menu sanduíche */
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero {
+        height: 50vh;
+        padding-left: 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+
+
+}
